@@ -5,11 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class TestManager {
     Ticket first = new Ticket(1, 15000, "LED", "GOJ", 240);
-<<<<<<< HEAD
     Ticket second = new Ticket(2, 15000, "LED", "GOJ", 330);
-=======
-    Ticket second = new Ticket(2, 11000, "LED", "GOJ", 330);
->>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
     Ticket third = new Ticket(3, 4300, "GOJ", "LED", 453);
     Ticket fourth = new Ticket(4, 15000, "EGO", "LED", 210);
     Ticket fifth = new Ticket(5, 12000, "EGO", "LED", 140);
@@ -72,11 +68,8 @@ public class TestManager {
         manager.add(fifth);
         manager.add(sixth);
 
-<<<<<<< HEAD
         Ticket[] actual = manager.findAll("EGO", "LED",new TicketByTravelTimeAscComparator());
-=======
-        Ticket[] actual = manager.findAll("EGO", "LED");
->>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
+
         Ticket[] expected = {fifth, fourth, sixth};
 
         Assertions.assertArrayEquals(expected, actual);
@@ -96,13 +89,8 @@ public class TestManager {
         manager.add(fifth);
         manager.add(sixth);
 
-<<<<<<< HEAD
         Ticket[] actual = manager.findAll("LED", "GOJ", new TicketByTravelTimeAscComparator());
         Ticket[] expected = {first, second};
-=======
-        Ticket[] actual = manager.findAll("LED", "GOJ");
-        Ticket[] expected = {second, first};
->>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -123,11 +111,9 @@ public class TestManager {
 
         manager.getAll();
 
-<<<<<<< HEAD
+
         Ticket[] actual = manager.findAll("AAA", "AAA", new TicketByTravelTimeAscComparator());
-=======
-        Ticket[] actual = manager.findAll("AAA", "AAA");
->>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
+
         Ticket[] expected = {};
 
         Assertions.assertArrayEquals(expected, actual);
@@ -148,11 +134,8 @@ public class TestManager {
 
         manager.getAll();
 
-<<<<<<< HEAD
         Ticket[] actual = manager.findAll("LED", "AAA", new TicketByTravelTimeAscComparator());
-=======
-        Ticket[] actual = manager.findAll("LED", "AAA");
->>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
+
         Ticket[] expected = {};
 
         Assertions.assertArrayEquals(expected, actual);
@@ -173,11 +156,8 @@ public class TestManager {
 
         manager.getAll();
 
-<<<<<<< HEAD
         Ticket[] actual = manager.findAll("AAA", "GOJ", new TicketByTravelTimeAscComparator());
-=======
-        Ticket[] actual = manager.findAll("AAA", "GOJ");
->>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
+
         Ticket[] expected = {};
 
         Assertions.assertArrayEquals(expected, actual);
