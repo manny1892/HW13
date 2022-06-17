@@ -1,7 +1,10 @@
 package ru.netology.domain;
 
 import java.util.Arrays;
+<<<<<<< HEAD
 import java.util.Comparator;
+=======
+>>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
 
 public class TicketManager {
     private TicketRepository repository;
@@ -22,7 +25,11 @@ public class TicketManager {
         return repository.findAll();
     }
 
+<<<<<<< HEAD
     public Ticket[] findAll(String departureAirport, String arrivalAirport, Comparator<Ticket> comparator) {
+=======
+    public Ticket[] findAll(String departureAirport, String arrivalAirport) {
+>>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
 
         Ticket[] result = new Ticket[0];
         for (Ticket ticket : repository.findAll()) {
@@ -36,7 +43,10 @@ public class TicketManager {
             }
         }
         Arrays.sort(result);
+<<<<<<< HEAD
         Arrays.sort(result,comparator);
+=======
+>>>>>>> 30b5ef9ab2104dbbca755cc152d02d94c04ad35a
         System.out.println(Arrays.toString(result));
         return result;
     }
